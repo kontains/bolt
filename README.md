@@ -1,10 +1,14 @@
-[![Bolt.new: AI-Powered Full-Stack Web Development in the Browser](./public/social_preview_index.jpg)](https://bolt.new)
 
-# Bolt.new Fork by Cole Medin
+## Fork
 
-This fork of Bolt.new allows you to choose the LLM that you use for each prompt! Currently, you can use OpenAI, Anthropic, Ollama, OpenRouter, Gemini, or Groq models - and it is easily extended to use any other model supported by the Vercel AI SDK! See the instructions below for running this locally and extending it to include more models.
+This fork allows you to choose a local LLM via Ollama.
+See the instructions below for running or extending it to include more models.
 
-# Requested Additions to this Fork - Feel Free to Contribute!!
+## Dev
+
+<details closed>
+
+<summary>todo list</summary>
 
 - ✅ OpenRouter Integration (@coleam00)
 - ✅ Gemini Integration (@jonathands)
@@ -40,6 +44,9 @@ This fork of Bolt.new allows you to choose the LLM that you use for each prompt!
 - ⬜ VSCode Integration with git-like confirmations
 - ⬜ Upload documents for knowledge - UI design templates, a code base to reference coding style, etc.
 - ⬜ Voice prompting
+
+</details>
+
 
 # Bolt.new: AI-Powered Full-Stack Web Development in the Browser
 
