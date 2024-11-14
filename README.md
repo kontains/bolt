@@ -1,3 +1,4 @@
+![social](./public/images/social.webp)
 
 ## BOLT!
 
@@ -242,7 +243,7 @@ When you add a new model to the MODEL_LIST array, it will immediately be availab
 
 </details>
 
-<br><hr><br>
+<hr><hr>
 
 ### Dev
 
