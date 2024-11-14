@@ -24,13 +24,15 @@ Whether you’re an experienced developer, a PM, or a designer, Bolt.new allows 
 
 For developers interested in building their own AI-powered development tools with WebContainers, check out the open-source Bolt codebase in this repo!
 
+<hr>
+
 </details>
 
 <details closed>
 
 <summary>Setup</summary>
 
-## Setup
+### Setup
 
 Many of you are new users to installing software from Github. If you have any installation troubles reach out and submit an "issue" using the links above, or feel free to enhance this documentation by forking, editing the instructions, and doing a pull request.
 
@@ -86,13 +88,15 @@ VITE_LOG_LEVEL=debug
 
 **Important**: Never commit your `.env.local` file to version control. It's already included in .gitignore.
 
+<hr>
+
 </details>
 
 <details closed>
 
 <summary>Run with Docker</summary>
 
-## Run with Docker
+### Run with Docker
 
 Prerequisites:
 
@@ -138,13 +142,15 @@ When you run the Docker Compose command with the development profile, any change
 make on your machine to the code will automatically be reflected in the site running
 on the container (i.e. hot reloading still applies!).
 
+<hr>
+
 </details>
 
 <details closed>
 
 <summary>Run Without Docker</summary>
 
-## Run Without Docker
+### Run Without Docker
 
 1. Install dependencies using Terminal (or CMD in Windows with admin permissions):
 
@@ -164,13 +170,15 @@ sudo npm install -g pnpm
 pnpm run dev
 ```
 
+<hr>
+
 </details>
 
 <details closed>
 
 <summary>Ollama Tips!</summary>
 
-## Important Note on Running Ollama Models
+### Note on running Ollama models!
 
 Ollama models by default only have 2048 tokens for their context window. Even for large models that can easily handle way more.
 This is not a large enough window to handle the Bolt.new/oTToDev prompt! You have to create a version of any model you want
@@ -195,13 +203,15 @@ ollama create -f Modelfile [your new model ID, can be whatever you want (example
 Now you have a new Ollama model that isn't heavily limited in the context length like Ollama models are by default for some reason.
 You'll see this new model in the list of Ollama models along with all the others you pulled!
 
+<hr>
+
 </details>
 
 <details closed>
 
 <summary>Adding LLMs</summary>
 
-## Adding LLMs:
+### Adding LLMs:
 
 To make new LLMs available to use in this version of Bolt.new, head on over to `app/utils/constants.ts` and find the constant MODEL_LIST. Each element in this array is an object that has the model ID for the name (get this from the provider's API documentation), a label for the frontend model dropdown, and the provider. 
 
@@ -209,13 +219,15 @@ By default, Anthropic, OpenAI, Groq, and Ollama are implemented as providers, bu
 
 When you add a new model to the MODEL_LIST array, it will immediately be available to use when you run the app locally or reload it. For Ollama models, make sure you have the model installed already before trying to use it here!
 
+<hr>
+
 </details>
 
 <details closed>
 
 <summary>Available Scripts</summary>
 
-## Available Scripts
+### Available Scripts
 
 - `pnpm run dev`: Starts the development server.
 - `pnpm run build`: Builds the project.
@@ -226,13 +238,19 @@ When you add a new model to the MODEL_LIST array, it will immediately be availab
 - `pnpm run typegen`: Generates TypeScript types using Wrangler.
 - `pnpm run deploy`: Builds the project and deploys it to Cloudflare Pages.
 
+<hr>
+
 </details>
+
+<br><hr><br>
+
+### Dev
 
 <details closed>
 
-<summary>Dev</summary>
+<summary>Start</summary>
 
-## Development
+### Start Server
 
 To start the development server:
 
@@ -242,9 +260,9 @@ pnpm run dev
 
 This will start the Remix Vite development server. You will need Google Chrome Canary to run this locally if you use Chrome! It's an easy install and a good browser for web development anyway.
 
-</details>
+<hr>
 
-## Dev
+</details>
 
 <details closed>
 
@@ -285,13 +303,15 @@ This will start the Remix Vite development server. You will need Google Chrome C
 - ⬜ Upload documents for knowledge - UI design templates, a code base to reference coding style, etc.
 - ⬜ Voice prompting
 
+<hr>
+
 </details>
 
 <details closed>
 
 <summary>More Tips</summary>
 
-## Tips
+### Tips
 
 Here are some tips to get the most out of Bolt.new:
 
@@ -303,6 +323,8 @@ Here are some tips to get the most out of Bolt.new:
 
 - **Batch simple instructions**: Save time by combining simple instructions into one message. For example, you can ask Bolt to change the color scheme, add mobile responsiveness, and restart the dev server, all in one go saving you time and reducing API credit consumption significantly.
 
+<hr>
+
 </details>
 
 <hr>
@@ -311,3 +333,5 @@ Here are some tips to get the most out of Bolt.new:
 
 This fork allows you to choose a local LLM via Ollama.
 See the instructions below for running or extending it to include more models.
+
+
