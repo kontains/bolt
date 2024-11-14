@@ -1,58 +1,13 @@
 
-## Fork
+## BOLT!
 
-This fork allows you to choose a local LLM via Ollama.
-See the instructions below for running or extending it to include more models.
-
-## Dev
+### LLM Webdev in a browser
 
 <details closed>
 
-<summary>todo list</summary>
+<summary>What Makes Bolt Different</summary>
 
-- ✅ OpenRouter Integration (@coleam00)
-- ✅ Gemini Integration (@jonathands)
-- ✅ Autogenerate Ollama models from what is downloaded (@yunatamos)
-- ✅ Filter models by provider (@jasonm23)
-- ✅ Download project as ZIP (@fabwaseem)
-- ✅ Improvements to the main Bolt.new prompt in `app\lib\.server\llm\prompts.ts` (@kofi-bhr)
-- ✅ DeepSeek API Integration (@zenith110)
-- ✅ Mistral API Integration (@ArulGandhi)
-- ✅ "Open AI Like" API Integration (@ZerxZ)
-- ✅ Ability to sync files (one way sync) to local folder (@muzafferkadir)
-- ✅ Containerize the application with Docker for easy installation (@aaronbolton)
-- ✅ Publish projects directly to GitHub (@goncaloalves)
-- ✅ Ability to enter API keys in the UI (@ali00209)
-- ✅ xAI Grok Beta Integration (@milutinke)
-- ⬜ **HIGH PRIORITY** - Prevent Bolt from rewriting files as often (file locking and diffs)
-- ⬜ **HIGH PRIORITY** - Better prompting for smaller LLMs (code window sometimes doesn't start)
-- ⬜ **HIGH PRIORITY** Load local projects into the app
-- ⬜ **HIGH PRIORITY** - Attach images to prompts
-- ⬜ **HIGH PRIORITY** - Run agents in the backend as opposed to a single model call
-- ⬜ LM Studio Integration
-- ⬜ Together Integration
-- ⬜ Azure Open AI API Integration
-- ⬜ HuggingFace Integration
-- ⬜ Perplexity Integration
-- ⬜ Vertex AI Integration
-- ⬜ Cohere Integration
-- ⬜ Deploy directly to Vercel/Netlify/other similar platforms
-- ⬜ Ability to revert code to earlier version
-- ⬜ Prompt caching
-- ⬜ Better prompt enhancing
-- ⬜ Have LLM plan the project in a MD file for better results/transparency
-- ⬜ VSCode Integration with git-like confirmations
-- ⬜ Upload documents for knowledge - UI design templates, a code base to reference coding style, etc.
-- ⬜ Voice prompting
-
-</details>
-
-
-# Bolt.new: AI-Powered Full-Stack Web Development in the Browser
-
-Bolt.new is an AI-powered web development agent that allows you to prompt, run, edit, and deploy full-stack applications directly from your browser—no local setup required. If you're here to build your own AI-powered web dev agent using the Bolt open source codebase, [click here to get started!](./CONTRIBUTING.md)
-
-## What Makes Bolt.new Different
+## What Makes Bolt Different
 
 Claude, v0, etc are incredible- but you can't install packages, run backends, or edit code. That’s where Bolt.new stands out:
 
@@ -68,6 +23,12 @@ Claude, v0, etc are incredible- but you can't install packages, run backends, or
 Whether you’re an experienced developer, a PM, or a designer, Bolt.new allows you to easily build production-grade full-stack applications.
 
 For developers interested in building their own AI-powered development tools with WebContainers, check out the open-source Bolt codebase in this repo!
+
+</details>
+
+<details closed>
+
+<summary>Setup</summary>
 
 ## Setup
 
@@ -125,6 +86,12 @@ VITE_LOG_LEVEL=debug
 
 **Important**: Never commit your `.env.local` file to version control. It's already included in .gitignore.
 
+</details>
+
+<details closed>
+
+<summary>Run with Docker</summary>
+
 ## Run with Docker
 
 Prerequisites:
@@ -171,6 +138,12 @@ When you run the Docker Compose command with the development profile, any change
 make on your machine to the code will automatically be reflected in the site running
 on the container (i.e. hot reloading still applies!).
 
+</details>
+
+<details closed>
+
+<summary>Run Without Docker</summary>
+
 ## Run Without Docker
 
 1. Install dependencies using Terminal (or CMD in Windows with admin permissions):
@@ -191,7 +164,13 @@ sudo npm install -g pnpm
 pnpm run dev
 ```
 
-## Super Important Note on Running Ollama Models
+</details>
+
+<details closed>
+
+<summary>Ollama Tips!</summary>
+
+## Important Note on Running Ollama Models
 
 Ollama models by default only have 2048 tokens for their context window. Even for large models that can easily handle way more.
 This is not a large enough window to handle the Bolt.new/oTToDev prompt! You have to create a version of any model you want
@@ -216,13 +195,25 @@ ollama create -f Modelfile [your new model ID, can be whatever you want (example
 Now you have a new Ollama model that isn't heavily limited in the context length like Ollama models are by default for some reason.
 You'll see this new model in the list of Ollama models along with all the others you pulled!
 
-## Adding New LLMs:
+</details>
+
+<details closed>
+
+<summary>Adding LLMs</summary>
+
+## Adding LLMs:
 
 To make new LLMs available to use in this version of Bolt.new, head on over to `app/utils/constants.ts` and find the constant MODEL_LIST. Each element in this array is an object that has the model ID for the name (get this from the provider's API documentation), a label for the frontend model dropdown, and the provider. 
 
 By default, Anthropic, OpenAI, Groq, and Ollama are implemented as providers, but the YouTube video for this repo covers how to extend this to work with more providers if you wish!
 
 When you add a new model to the MODEL_LIST array, it will immediately be available to use when you run the app locally or reload it. For Ollama models, make sure you have the model installed already before trying to use it here!
+
+</details>
+
+<details closed>
+
+<summary>Available Scripts</summary>
 
 ## Available Scripts
 
@@ -235,6 +226,12 @@ When you add a new model to the MODEL_LIST array, it will immediately be availab
 - `pnpm run typegen`: Generates TypeScript types using Wrangler.
 - `pnpm run deploy`: Builds the project and deploys it to Cloudflare Pages.
 
+</details>
+
+<details closed>
+
+<summary>Dev</summary>
+
 ## Development
 
 To start the development server:
@@ -245,7 +242,56 @@ pnpm run dev
 
 This will start the Remix Vite development server. You will need Google Chrome Canary to run this locally if you use Chrome! It's an easy install and a good browser for web development anyway.
 
-## Tips and Tricks
+</details>
+
+## Dev
+
+<details closed>
+
+<summary>todo list</summary>
+
+- ✅ OpenRouter Integration (@coleam00)
+- ✅ Gemini Integration (@jonathands)
+- ✅ Autogenerate Ollama models from what is downloaded (@yunatamos)
+- ✅ Filter models by provider (@jasonm23)
+- ✅ Download project as ZIP (@fabwaseem)
+- ✅ Improvements to the main Bolt.new prompt in `app\lib\.server\llm\prompts.ts` (@kofi-bhr)
+- ✅ DeepSeek API Integration (@zenith110)
+- ✅ Mistral API Integration (@ArulGandhi)
+- ✅ "Open AI Like" API Integration (@ZerxZ)
+- ✅ Ability to sync files (one way sync) to local folder (@muzafferkadir)
+- ✅ Containerize the application with Docker for easy installation (@aaronbolton)
+- ✅ Publish projects directly to GitHub (@goncaloalves)
+- ✅ Ability to enter API keys in the UI (@ali00209)
+- ✅ xAI Grok Beta Integration (@milutinke)
+- ⬜ **HIGH PRIORITY** - Prevent Bolt from rewriting files as often (file locking and diffs)
+- ⬜ **HIGH PRIORITY** - Better prompting for smaller LLMs (code window sometimes doesn't start)
+- ⬜ **HIGH PRIORITY** Load local projects into the app
+- ⬜ **HIGH PRIORITY** - Attach images to prompts
+- ⬜ **HIGH PRIORITY** - Run agents in the backend as opposed to a single model call
+- ⬜ LM Studio Integration
+- ⬜ Together Integration
+- ⬜ Azure Open AI API Integration
+- ⬜ HuggingFace Integration
+- ⬜ Perplexity Integration
+- ⬜ Vertex AI Integration
+- ⬜ Cohere Integration
+- ⬜ Deploy directly to Vercel/Netlify/other similar platforms
+- ⬜ Ability to revert code to earlier version
+- ⬜ Prompt caching
+- ⬜ Better prompt enhancing
+- ⬜ Have LLM plan the project in a MD file for better results/transparency
+- ⬜ VSCode Integration with git-like confirmations
+- ⬜ Upload documents for knowledge - UI design templates, a code base to reference coding style, etc.
+- ⬜ Voice prompting
+
+</details>
+
+<details closed>
+
+<summary>More Tips</summary>
+
+## Tips
 
 Here are some tips to get the most out of Bolt.new:
 
@@ -256,3 +302,12 @@ Here are some tips to get the most out of Bolt.new:
 - **Scaffold the basics first, then add features**: Make sure the basic structure of your application is in place before diving into more advanced functionality. This helps Bolt understand the foundation of your project and ensure everything is wired up right before building out more advanced functionality.
 
 - **Batch simple instructions**: Save time by combining simple instructions into one message. For example, you can ask Bolt to change the color scheme, add mobile responsiveness, and restart the dev server, all in one go saving you time and reducing API credit consumption significantly.
+
+</details>
+
+<hr>
+
+### Fork
+
+This fork allows you to choose a local LLM via Ollama.
+See the instructions below for running or extending it to include more models.
