@@ -1,6 +1,6 @@
 ### LLM BOLT
 
-[Note on Workbench](https://github.com/kontains/bolt#note-on-running-ollama-models):   `PARAMETER num_ctx #####`  Set 32k or 128k Context Length (32768 or 131072 bytes) required when opening and using the Workbench.
+[Note on Workbench](#note-on-running-ollama-models): The `Modelfile` Ollama Create uses; `PARAMETER num_ctx #####` should be set to 32k or 128k Context Length (32768 or 131072 bytes) as required when opening or using the Workbench.
 
 <hr>
 
