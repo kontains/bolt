@@ -1,6 +1,12 @@
+### LLM BOLT
+
+[Note on Workbench](https://github.com/kontains/bolt#note-on-running-ollama-models):   `PARAMETER num_ctx #####`  Set 32k or 128k Context Length (32768 or 131072 bytes) required when opening and using the Workbench.
+
+<hr>
+
 ![social](./public/images/social.webp)
 
-## BOLT!
+<hr>
 
 ### LLM Webdev in a browser
 
