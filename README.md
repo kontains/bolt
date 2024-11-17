@@ -1,3 +1,4 @@
+
 ### LLM BOLT
 
 [Note on Workbench](#note-on-running-ollama-models): The `Modelfile` Ollama Create uses; `PARAMETER num_ctx #####` should be set to 32k or 128k Context Length (32768 or 131072 bytes) as required when opening or using the Workbench.
@@ -270,6 +271,18 @@ This will start the Remix Vite development server. You will need Google Chrome C
 <hr>
 
 </details>
+
+
+<details><summary>App Config</summary>
+
+* [Config](Config.md)   (pending)
+
+* [Constants](app/utils/constants.ts)   See; DEFAULT_MODEL = 'claude-3-5-sonnet-latest';
+
+</details>
+
+
+<hr>
 
 <details closed>
 
