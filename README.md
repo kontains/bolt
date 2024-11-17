@@ -181,7 +181,7 @@ pnpm run dev
 
 </details>
 
-<details closed>
+<details open>
 
 <summary>Ollama Tips!</summary>
 
