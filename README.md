@@ -316,19 +316,27 @@ This will start the Remix Vite development server. You will need Google Chrome C
 
 <details closed>
 
-<summary>More Tips</summary>
+<summary>Tips & Tricks</summary>
 
-### Tips
+## More Tips
 
-Here are some tips to get the most out of Bolt.new:
+- **Be Patient!**:  If you try to save the page while Bolt is generating it'll stop the model with an notified error.
 
-- **Be specific about your stack**: If you want to use specific frameworks or libraries (like Astro, Tailwind, ShadCN, or any other popular JavaScript framework), mention them in your initial prompt to ensure Bolt scaffolds the project accordingly.
+- ** ... **:
 
-- **Use the enhance prompt icon**: Before sending your prompt, try clicking the 'enhance' icon to have the AI model help you refine your prompt, then edit the results before submitting.
+- **Be specific about your stack**:  For specific frameworks or libraries (like Astro, Tailwind, or popular JS frameworks) then mention them in your initial prompt to ensure Bolt scaffolds the project accordingly.
 
-- **Scaffold the basics first, then add features**: Make sure the basic structure of your application is in place before diving into more advanced functionality. This helps Bolt understand the foundation of your project and ensure everything is wired up right before building out more advanced functionality.
+- ** ... **:
 
-- **Batch simple instructions**: Save time by combining simple instructions into one message. For example, you can ask Bolt to change the color scheme, add mobile responsiveness, and restart the dev server, all in one go saving you time and reducing API credit consumption significantly.
+- **Use the enhance prompt icon**:  Before sending your prompt, try clicking the 'enhance' icon to have the AI model help you refine your prompt, then edit the results before submitting.
+
+- ** ... **:
+
+- **Scaffold the basics first, then add features**:  Make sure the basic structure of your application is in place before diving into more advanced functionality. This helps Bolt understand the foundation of your project and ensure everything is wired up right before building out more advanced functionality.
+
+- ** ... **:
+
+- **Batch simple instructions**:  Save time by combining simple instructions into one message. For example, you can ask Bolt to change the color scheme, add mobile responsiveness, and restart the dev server, all in one go saving you time and reducing API credit consumption significantly.
 
 <hr>
 
@@ -339,6 +347,5 @@ Here are some tips to get the most out of Bolt.new:
 ### Fork
 
 This fork allows you to choose a local LLM via Ollama.
-See the instructions below for running or extending it to include more models.
-
+See Bolt's console [command list](#Available-Scripts) for further details on building the server app.
 
